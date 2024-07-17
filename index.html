@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="/submit_signup" method="post">
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="mobile-no" name="mobile-no" placeholder="Mobile No." required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group terms">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I Agree</label>
+                <span>By clicking <strong>Register</strong>, you agree to the <a href="#">Terms and Conditions</a> set out by this site, including our Cookie Use.</span>
+            </div>
+            <div class="form-group buttons">
+                <button type="submit" class="register-btn">Register</button>
+                <button type="button" class="signin-btn">Sign In</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
